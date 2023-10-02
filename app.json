@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ee932c73-58ff-405a-886b-ff45bf76de25"
+      }
+    },
+    "android": {
+      "package": "com.migeruj.classifierapp"
+    }
+  },
+  "infoPlist": {
+    "NSCameraUsageDescription": "This app uses the back camera to take pictures of places to be analized by a microserice and classify which archeological art are presented",
+    "NSPhotoLibraryUsageDescription": "This app uses the photo library to be able to classify which archeological art are presented. The photo is chosen by the user"
+  }
+}
